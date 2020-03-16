@@ -125,4 +125,70 @@ background-color:green;
 <li>About</li>
 </ul>
 </header>
- 
+
+Style Placement:__________________________________
+in line:
+<p style="text-align: center; color:red;">
+external style sheet:
+<link rel="stylesheet" href="style.css">
+
+Conflict Resolution:________________________________
+Concepts  2know:
+1. origin:
+WHEN THEY CONFLICT
+last declaration wins
+-external is made at the link
+2. merge:
+WHEN NOT CONFLICT
+declarations merge
+3. inheritance:
+if i set bod to be blue 
+everything inside will be blue
+4. specificity:
+most specific selector combination wins
+look at :
+style="..."
+ID:#
+Class, pseudo class, attribute
+# of elements
+
+EXCEPTION
+p{
+color:green !important;<!-- always sets paragraphs to this because it's important ;) -->
+}
+
+Styling Text:______________________________________
+.style{
+font-family:"Times New Roman", "Times", "serif";<!--just in case the users comp doesn't have the one font-->
+color:#0000ff;<!--rrggbb-->
+font-style:italic;
+font-weight:bold;<!--u can use numbers-->
+font-size: 24px;
+text-transform:lowercase;
+text-align: right;
+}
+<p class="style">
+
+Relative Font Sizing:___________________________________
+<style>
+body{
+font-size: 120%;
+}
+</style>
+
+<div style="font-size: 2em;"><!--doubles the text size-->
+
+Box Model Layout:__________________________________________
+box model layout:
+- border
+- margin
+- padding
+ex:
+body{
+margin:0px;
+padding:10px 10px 10px 10px;<!--top right bottom left-->
+background-color: gray;
+border: 3px solid black;
+width:1100px;
+box-sizing:border-box;<!--rather than content box-->
+}
