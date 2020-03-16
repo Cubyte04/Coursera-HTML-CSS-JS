@@ -1,0 +1,68 @@
+HTML = Hyper text markup language
+Hypertext = text with links to another text
+Hypermedia = extension of hypertext
+Markup = annotate content to edit what is displayed (html)
+HTML is human readable
+Language = has it's own syntax like java or python
+
+Technologies that drive the web
+HTML = provides the structure
+CSS = shows the colors or stylistic choices
+JS = functionality/behavior
+
+Anatomy of an html tag___________________________
+
+<p>
+- p = element
+- <> = tag
+
+<p id = "myid"></p>
+attribute = can only be specified in the heading tag(used to describe what the tag is)
+
+placeholder with no content
+<p></p>
+
+Basic HTML Structure________________________________
+<!doctype html>#has no actual function but used to say this is html(NECESSARY)
+<html>
+<head>
+  <meta charset="utf-8">#specifies language
+</head>
+<body>
+TEXT
+</body>
+</html>
+
+BLOCKLEVEL elements vs INLINE element
+=
+<div></div>vs<span></span>
+cannot have div in span
+but vice versa is fine
+
+HTML TAGS_________________
+semantic element = implies meaning to content
+-may help seo
+
+<h1></h1>#not used for styling but organization
+<h3></h3>
+<h6></h6>
+
+<header>
+<nav>usually has links to content later in the page</nav>
+</header>
+
+<section>
+<article>article one</article>
+</section>
+
+<aside>related content</aside>
+
+<footer>foot<footer>
+
+HTML LISTS_________________________________
+<div>
+<ul>
+<li></li>
+</ul>
+</div>
+
