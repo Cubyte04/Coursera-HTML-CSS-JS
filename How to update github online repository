@@ -1,0 +1,6 @@
+How to update github from private repository:
+1. git status(checks status)
+2. git add site/. (or site/index.html)
+3. git commit -m "Description"(local update)
+4. git push
+Done...
