@@ -1,0 +1,128 @@
+CSS Rules
+<style>
+p{
+  color:blue;
+  font-size:20px;
+  text-align:center;
+  width:200px;
+}
+</style>
+
+Selectors:
+element
+p{
+color:blue;
+}
+class
+.blue{
+color:blue;
+}
+<p class="blue"></p>
+id
+#name{
+color:blue;
+}
+<p id="name"></p>
+
+Combo
+div, .blue{
+color:blue;
+}
+
+
+Combining Selectors:______________________
+1 element +class
+p.big{
+  font-size:20px;
+}
+ex.<p class="big"></p>
+
+2 child sector
+article > p {<!--read as paragraph children of articles-->
+  color:blue;
+}
+ex:
+<article>
+<p>BLUE</p>
+</article>
+not ex:<!--must be a direct child-->
+<article><div>
+<p>NOT_BLUE</p></div>
+</article>
+
+3 descendant selector
+article p{
+color:blue;
+}
+same as child except any level of child
+ex:
+<article><div>
+<p>NOT_BLUE</p></div>
+</article>
+NOTE
+selector can be an element
+
+.class p{
+color:blue;
+}
+
+NOTES EXAMPLES__________________________
+apply multiple classes: <div class="class1 class2">
+.highlight{
+  color:red;
+}
+p.highlight{
+  color:blue;
+}
+.highlight.mainpoint{
+sets those with both highlight and mainpoint classes
+}
+Pseudo Class Selectors:_________________________________
+Selector:pseudo-class{
+}
+Pseudo Class Selectors:
+1. :link
+2. :visited
+3. :hover
+4. :active
+5. :nth-child(...)
+<style>
+header li{
+  list-style:none;
+}
+a.link, a:visited {
+  text-decoration:none;
+  background-color: green;
+  border: 1px solid blue;
+  color:black;
+  display:block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+a.hover, a.active{
+background-color:red;
+color:purple;
+}
+
+header li:nth-child(3){<!--this refers to the about page-->
+font-size:24px;
+}
+
+section div:nth-child(odd){
+color:red;
+}
+section div:nth-child(4):hover{
+cursor:pointer;
+background-color:green;
+}
+</style>
+<header>
+<ul>
+<li>Home</li>
+<li>Content</li>
+<li>About</li>
+</ul>
+</header>
+ 
