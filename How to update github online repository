@@ -4,3 +4,9 @@ How to update github from private repository:
 3. git commit -m "Description"(local update)
 4. git push
 Done...
+
+More
+1.Browser Sync:
+browser-sync start --server --directory --files "*"
+
+
