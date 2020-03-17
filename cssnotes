@@ -190,5 +190,28 @@ padding:10px 10px 10px 10px;<!--top right bottom left-->
 background-color: gray;
 border: 3px solid black;
 width:1100px;
-box-sizing:border-box;<!--rather than content box-->
+box-sizing:border-box;<!--rather than content box| does not inherit-->
+overflow:hidden;
+overflow:auto;
+overflow:scroll;
 }
+*{<!-- selects all item for border bocks which does  not inherit | used to reset html-->
+box-sizing:border-box;
+}
+Touching margens
+larger margens are used between two boxes while the smaller one is removed!
+
+Background Property:_____________________
+#elementing{
+width:500px;
+height500px;
+background-image:url("___.png");
+background-repeat:no repeat or repeat or repeat-x or repeat-y;
+background-color:red;
+background-position: bottom;
+OR
+background: url() no-repeat right center blue;
+
+}
+FLOATIING ELEMENTS
+
