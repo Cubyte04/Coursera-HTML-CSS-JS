@@ -214,4 +214,8 @@ background: url() no-repeat right center blue;
 
 }
 FLOATIING ELEMENTS
+div{
+float:right;
+}
+
 
