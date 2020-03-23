@@ -215,7 +215,67 @@ background: url() no-repeat right center blue;
 }
 FLOATIING ELEMENTS
 div{
+backgrounf-color: #AAAAAA;
 float:right;
+clear:left; 
+//this is used to show that nothing shoud be allowed on it's left 
+//and will skip to the next line if necessary; used to conduct regular
+//document flow even when using float
 }
+RELATIVE POSITIONING________________________
+p{
+position: relative; or position: absolute; //removed from document flow
+top: 100 px;
+bottom:
+right:
+left:
+}
+
+MEDIA QUERIES__________________________________
+@media(max-width: 767px){//true or false statement
+p{
+color:blue;
+}
+}
+
+media style features:
+  max-width: 100px
+  min-width:800px
+  orientation:portrait
+  screen 
+  print
+
+combo
+(min-width:100px) and (max-width:1000px)
+or
+(min-width:100px) , (max-width:1000px)
+
+RESPONSIZE DESIGN:_______________________________
+width:80%
+margin-right:auto;
+margin-left:auto
+<meta name="viewport" content="width=device-width, initial-scale=1">//so the phone will not zoom out automatically to fit the page
+12 grid column grid
+
+TWITTER BOOTSTRAP:__________________________
+put this meta tag at the top when using twitter bootstrap
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<ur style sheet always put below so your editing the bootstrap and not the other way around remember 
+the rules of precedence for styles>
+
+//JS required stuff for bootstrap
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<div class="container-fluid">
+<div clas="row">
+<div class="col-md-4 col-sm-6">one</div>
+<div class="col-md-4">two</div>
+<div class="col-md-4">three</div>
+</div>
+</div>
+
 
 
