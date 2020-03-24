@@ -1,1 +1,20 @@
+W3SCHOOLS:___________________________________________________________________________________________________
+Where to use javascript
+<script></script>
+<script src="js/script.js"></script>
 
+code:
+console.log(x)
+
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+//document.getElementByID("demo").innerHTML = "hello world";
+
+JAVASCRIPT OUTPUTS:
+HTML element: innerHTML
+- document.getElementById(id).innerHTML = 1;
+HTML Output: document.write()
+- document.write()
+Alert box: window.alert()
+into the browser console: console.log()
