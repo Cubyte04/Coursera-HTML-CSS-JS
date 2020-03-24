@@ -18,3 +18,8 @@ HTML Output: document.write()
 - document.write()
 Alert box: window.alert()
 into the browser console: console.log()
+
+Syntax___________________
+ver x, y;
+x = y = 7
+//comment
