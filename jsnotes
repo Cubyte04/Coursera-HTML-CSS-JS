@@ -23,3 +23,50 @@ Syntax___________________
 ver x, y;
 x = y = 7
 //comment
+
+var cash=.5, name="bob";
+or
+var cash=.5, 
+name="bob;"
+
+var x = "5"+7+6;-->"5+7+6"
+var y = 3+2+"5";-->55
+var z = ["a","b","c"];
+var w = {name : "bob", age:10};
+var k;//k is equal to undefined same as var k = undefined; //null also exists
+Functions:
+typeof(anything);//return the type of anything
+= asigns value
+== checks if the values are the same
+=== checks if the values and the datatypes are the same
+
+PRIMITIVE DATA TYPES:_________________
+-string
+-number
+-boolean
+-undefined
+
+FUNCTIONS:_____________________________
+function myfunction( x,  y){
+return x*y;
+}
+
+OBJECTS:_________________
+making:
+var human = {name:"bob", age:100, gender:"M"};
+
+accessing
+1.
+human.name 
+or
+human["name"];
+
+2.
+human.fullName();
+
+HTML EVENTS:
+<element event="JS">
+ex.
+<button onclick="document.getElementById("demo").innerHTML=Date()">The time is ?</button>
+
+
