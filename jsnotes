@@ -69,4 +69,38 @@ HTML EVENTS:
 ex.
 <button onclick="document.getElementById("demo").innerHTML=Date()">The time is ?</button>
 
+COMMON LANGUAGE CONSTRUCTS:_____________________
+if(false || null|| undefined || "" || 0 || NaN ) // all of these are false so the conditional statement will not be executed
 
+Wrapper called Boolean can tell you if something will return true or false
+example: Boolean(null) // returns false
+
+if(true && "hello wordld" && 1 && -1 && "false")//returns true wow right
+
+function a(){
+return <---  This retuns undefined because javascrpit will automatically add a line to the end
+{
+name: "soemthing"
+};
+
+for(var i = 0; i< 10; i++){
+sum = sum + 1;
+}
+
+console.log("hello")// in developer studios
+
+function orderChickenWith(sideDish){
+console.log("Chicken with " + sideDish);
+}
+
+orderChickenWith("noodles");//chicken with noodles
+orderChickenWith(); //chicken with undefined
+
+Solution:
+
+function orderChickenWith(sideDish){
+sideDish = sideDish ||  "whatever";
+console.log("Chicken with " + sideDish);
+}
+
+orderChickenWith();//chicken with whatever
