@@ -104,3 +104,155 @@ console.log("Chicken with " + sideDish);
 }
 
 orderChickenWith();//chicken with whatever
+
+MAKING OBJECTS:______
+HARD WAY
+var company = new Object();
+company.name = "FaceBook";
+Company.ceo = new Object();
+Company.ceo.name = "mark";
+Company.ceo.favcolor = "red";
+a = Company["name"];
+var s = "stock";
+Company[s] = 1.01
+Console.log(Company[s])//returns 1.01
+EASIER WAY
+//same as that of above but simpler
+ var facebook = {
+ name:"Facebook",
+ ceo: {
+ name:"mark",
+ favColor:"red"
+ },
+ stock:110
+ };
+ Console.log(facebook)
+ 
+FUNCTIONS IN DEPTH
+IN JAVASCRIPT A FUNCTION IS JUST AN OBJECT
+function multiply(x, y){
+return x*y;
+}
+multiply.version = "v1.1.0.1"
+console.log(multiply)//returns the function itself 
+
+//function factory
+function makeMultiplier(multiplier){
+var myFunc = function(x){
+return mutliplier * x;
+};
+return myFunc;
+}
+
+  var multiplyBy3  = makeMultiplier(3);
+  console.log(multiplyBy3(10))//return 30
+  
+  function doOperationOn(x, operation){
+  return operation(x);
+  }
+  
+  var result = doOperationOn(5, multiplyBy3);
+  console.log(results);//returns 15
+  
+  Passing By Value
+  -primitive
+  ex. 
+  var a  = 7;
+  var b = a;
+  b = 5;
+  //a is the same
+  
+  Passing By Referance
+  -objects
+  ex.
+  var a = {x:7};
+  var b = a;
+  b.x = 5;
+  //a is also 5
+  
+  innn literal object instead of using this when wanting to edit a number or data in another function you must say
+  var self = this //so the this object always looks at self and not the global version of the variable
+  
+  ARRAYS:_____________________________
+  var array = new Array();
+  //you can store different type of object in one array
+  
+  var names = ["cat", "dog", "fish"];//wow an array
+  
+  for(var prop in ObjectLiteralEx)
+  console.log(prop+""+ObjectLiteralEx[prop]);
+  //prints all properties
+  
+  for(var name in names){
+  console.log("hello"+name);//prints all names
+  }
+  
+  __________________________________________________JS in WEBDEV___________________________________________________________
+  DOM MANIPULATION:
+  document.getElementByID("title");
+  
+  <button onClick = "sayHello();" >
+  ClickMeOrElse
+  </button>
+  
+  in js
+  function sayHello(){
+  var name = 
+  document.getElementByID("name").value();
+  var  message = "<h2>hello"+name+"</h2>!";
+  document.getElementByID("content").textContent = message;//does not allow h2
+    document.getElementByID("content").innerHTML = message;//makes it h2
+    if(name === "student"){
+    var title = 
+    document.querySelector("#title")
+    .textContent;
+    title += "loven it";//adds loven it to the end of the title by css id//doesn't work because it is not a referance
+    document.querySelector("#title")
+    .textContent += "loven it"; //works
+  
+  }
+  
+  way to work in js file
+  document.querySelector("button").addEventListener("click", sayHello)
+  or
+  document.querySelector("button")
+  .onClick = sayHello;
+  This gives us more flexibility
+
+  }
+  
+  
+  
+  you don't need to put the js tag at the bottom if you use: 
+  document.addEventListener("DOMContentLoaded", 
+  function(event){
+  /////////
+    function sayHello(){
+  var name = 
+  document.getElementByID("name").value();
+  var  message = "<h2>hello"+name+"</h2>!";
+  document.getElementByID("content").textContent = message;//does not allow h2
+    document.getElementByID("content").innerHTML = message;//makes it h2
+    if(name === "student"){
+    var title = 
+    document.querySelector("#title")
+    .textContent;
+    title += "loven it";//adds loven it to the end of the title by css id//doesn't work because it is not a referance
+    document.querySelector("#title")
+    .textContent += "loven it"; //works
+  
+  }
+  
+  way to work in js file
+  document.querySelector("button").addEventListener("click", sayHello)
+  or
+  document.querySelector("button")
+  .onClick = sayHello;
+  This gives us more flexibility
+  
+  ///////////
+  }
+  
+  )
+  
+  
